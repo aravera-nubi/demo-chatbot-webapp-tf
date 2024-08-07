@@ -25,3 +25,7 @@ variable "pod" {
 variable "project" {
   description = "The name of the project to which the resource is associated."
 }
+
+variable "coe" {
+  description = "The Nubiral Coe which the resource belongs"
+}

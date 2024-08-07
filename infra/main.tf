@@ -6,6 +6,7 @@ locals {
     Deadline  = var.deadline
     Owner     = var.owner
     Pod       = var.pod
+    Coe       = var.coe
     Project   = var.project
   }
 }

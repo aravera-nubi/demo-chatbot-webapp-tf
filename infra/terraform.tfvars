@@ -5,4 +5,4 @@ pod                  = "2"
 project              = "Interno"
 rg-name              = "rg-terraform-github-actions-demo-000"
 location             = "eastus"
-
+coe                  = "1"
