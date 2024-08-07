@@ -30,8 +30,8 @@ jobs:
       - name: Terraform Init
         run: terraform init -backend-config="sas_token=${{ secrets.AZURE_SAS_TOKEN }}"
 
-      - name: Terraform Format
-        run: terraform fmt -check
+      - name: Terraform Validate
+        run: terraform validate
 
       - name: Terraform Plan
         run: terraform plan
