@@ -1,11 +1,4 @@
-variable "location" {
-  description = "The Azure Region in wich all resource groups should be created"
-}
-
-variable "rg-name" {
-  description = "The name of the resource group"
-}
-
+# Local vars
 variable "createdby" {
   description = "The individual or team responsible for creating the resource"
 }
@@ -29,3 +22,28 @@ variable "project" {
 variable "coe" {
   description = "The Nubiral Coe which the resource belongs"
 }
+
+variable "environment" {
+  description = "The environment of the project resources (test, staging, prod, etc)."
+}
+
+# RG vars
+
+variable "location" {
+  description = "The Azure Region in wich all resource groups should be created"
+}
+
+# App service plan vars
+variable "sku_name" {
+  description = "The SKU for the App Service plan."
+  type        = string
+  default     = "B1"
+}
+
+variable "os_type" {
+  description = "The O/S type for the App Services to be hosted in this plan."
+  type        = string
+  default     = "Linux"
+}
+
+# App Service vars
