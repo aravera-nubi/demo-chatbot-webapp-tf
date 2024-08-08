@@ -32,8 +32,8 @@ resource "azurerm_service_plan" "service_plan" {
   name                = "asp-${var.project}-${var.environment}-${var.location}"
   location            =  azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
-  os_type             = "Linux"
-  sku_name            = "F1"
+  os_type             = var.os_type
+  sku_name            = var.sku_name
   tags = local.tags
 }
 
@@ -50,7 +50,8 @@ resource "azurerm_linux_web_app" "web_app" {
   tags                = local.tags
 
   site_config {
+    minimum_tls_version = "1.2"
     linux_fx_version = "PYTHON|3.11"
-    always_on = false
+    always_on = true
   }
 }
