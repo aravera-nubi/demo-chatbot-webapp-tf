@@ -9,5 +9,5 @@ environment          = "lab"
 sku_name             = "B1"
 service_name         = "chatbot"
 python_version       = "3.9"
-app_command_line     = "gunicorn --preload --bind 0.0.0.0:8000 --workers=4 --timeout 600 app:app"
+app_command_line     = "gunicorn --bind=0.0.0.0 --timeout 600 --chdir slack app:app"
 app_settings         = {}

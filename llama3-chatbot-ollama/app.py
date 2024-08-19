@@ -58,4 +58,5 @@ def main():
     return render_template('index.html', query_input=query_input, output=output)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    logging.info("Flask app started")
+    app.run(host="0.0.0.0", port=8000)
