@@ -1,5 +1,3 @@
-import os
-from dotenv import load_dotenv
 from langchain_community.llms import Ollama
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -8,7 +6,7 @@ import logging
 import re
 
 # Load environment variables from .env file
-load_dotenv()
+# load_dotenv()
 
 # Set environment cred
 #LANGCHAIN_API_KEY = os.environ["LANGCHAIN_API_KEY"]
