@@ -8,6 +8,6 @@ coe                  = "1"
 environment          = "lab"
 sku_name             = "B1"
 service_name         = "chatbot"
-python_version       = "3.9"
+python_version       = "3.8"
 app_command_line     = ""
 app_settings         = {}
