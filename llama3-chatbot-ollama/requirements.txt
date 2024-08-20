@@ -1,4 +1,6 @@
 gunicorn
+langchain-openai
 langchian-core
+python-dotenv
 langchain-community
 flask
