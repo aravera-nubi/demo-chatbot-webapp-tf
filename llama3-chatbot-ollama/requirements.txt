@@ -1,7 +1,4 @@
 gunicorn
-langchain-openai
-langchain-core
-python-dotenv
-streamlit
+langchian-core
 langchain-community
-flask 
+flask

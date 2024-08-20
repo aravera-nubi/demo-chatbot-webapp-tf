@@ -57,6 +57,8 @@ def main():
                 output = "Sorry, an error occurred while processing your request."
     return render_template('index.html', query_input=query_input, output=output)
 
+# Run the Flask app
+
 if __name__ == '__main__':
     logging.info("Flask app started")
     app.run(host="0.0.0.0", port=8000)

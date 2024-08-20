@@ -10,6 +10,7 @@ on:
       - main
     paths:
       - 'llama3-chatbot-ollama/**'
+      - 'startup.txt'      
 
 jobs:
   build:
