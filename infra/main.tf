@@ -50,14 +50,11 @@ resource "azurerm_linux_web_app" "web_app" {
 
   site_config {
     always_on         = var.always_on
-    use_32_bit_worker = var.use_32_bit_worker
     app_command_line  = var.app_command_line
     application_stack {
       python_version = var.python_version
     }
   }
-
-  app_settings = var.app_settings
 
 }
 

@@ -59,20 +59,9 @@ variable "always_on" {
   default     = true
 }
 
-variable "use_32_bit_worker" {
-  description = "The use 32 bit worker setting for the app service."
-  type        = bool
-  default     = false
-}
-
 variable "app_command_line" {
   description = "The cmd line to configure the app to run."
   type        = string
-}
-
-variable "app_settings" {
-  description = "A list of app settings pairs to be assigned to the app service"
-  type        = map(string)
 }
 
 variable "python_version" {
